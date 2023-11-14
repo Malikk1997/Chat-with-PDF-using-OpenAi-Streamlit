@@ -22,3 +22,6 @@ Functional Requirements:
 Optional Task: PDF Document Cache
  
 Consider implementing a caching mechanism to remember previously uploaded PDF documents for each user. This cache would prevent the need to re-upload the same PDFs unnecessarily and enhance the user experience.
+
+OUTPUT:
+I have built web application using streamlit and one can drag and drop the pdf and question on it like we did in chatgpt. Also, it will preserve the previous chats and cache.
