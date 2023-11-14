@@ -1,6 +1,8 @@
 # Chat-with-PDF-using-OpenAi-Streamlit
 Here, I am working on this project and trying to upgrade its functionality day by day. So, I am going to split my work so as to make you understand it better where I added new functionality like Version 1, 2 and so on. And how it increases the efficiency. Also, it will help to understand smaller chunks bit by bit. 
+
 This chat_pdf_code.py file is the First Task.
+
 Task 1- Development of a Multi-Turn Streamlit Chatbot app for PDF-Based Q&A with Context Preservation.
 Problem Statement:
 Develop a Streamlit-based chatbot application that empowers users to interact with textual content from uploaded PDF documents using the OpenAI API. The primary goal of this application is to facilitate seamless and interactive information retrieval, enabling users to engage in multi-turn conversations with the chatbot while preserving context and memory of previous interactions.
