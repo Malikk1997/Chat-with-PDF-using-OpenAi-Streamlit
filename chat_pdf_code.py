@@ -3,7 +3,8 @@ print(sys.path)
 import os
 print(os.environ)
 import sys
-sys.path.insert(0, 'C:\\Users\\HP\\Documents\\chatpdf\\myenv\\Lib\\site-packages')
+sys.path.insert(0, r'C:\Users\HP\Documents\chatpdf\myenv\Lib\site-packages')
+
 
 
 import streamlit as st
