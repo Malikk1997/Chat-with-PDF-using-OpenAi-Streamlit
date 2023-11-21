@@ -3,7 +3,7 @@ Here, I am working on this project and trying to upgrade its functionality day b
 
 This chat_pdf_code.py file is the First Task.
 
-Task 1- Development of a Multi-Turn Streamlit Chatbot app for PDF-Based Q&A with Context Preservation.
+Task 1 & 2- Development of a Multi-Turn Streamlit Chatbot app for PDF-Based Q&A with Context Preservation.
 Problem Statement:
 Develop a Streamlit-based chatbot application that empowers users to interact with textual content from uploaded PDF documents using the OpenAI API. The primary goal of this application is to facilitate seamless and interactive information retrieval, enabling users to engage in multi-turn conversations with the chatbot while preserving context and memory of previous interactions.
  
