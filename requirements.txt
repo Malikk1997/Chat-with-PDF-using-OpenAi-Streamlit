@@ -6,3 +6,6 @@ faiss-cpu==1.7.4
 streamlit-extras
 pip install -r requirements.txt
 pip install python-dotenv
+pyodbc
+pandas
+os
