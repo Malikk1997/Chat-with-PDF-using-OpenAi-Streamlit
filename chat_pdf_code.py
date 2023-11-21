@@ -1,12 +1,3 @@
-import sys
-print(sys.path)
-import os
-print(os.environ)
-import sys
-sys.path.insert(0, r'C:\Users\HP\Documents\chatpdf\myenv\Lib\site-packages')
-
-
-
 import streamlit as st
 from dotenv import load_dotenv
 import pickle
@@ -19,7 +10,6 @@ from langchain.llms import OpenAI
 from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
 import os
-
 
 # Sidebar contents
 with st.sidebar:
@@ -55,6 +45,8 @@ def main():
     # Upload a PDF file
     pdf_file = st.file_uploader("Upload your PDF", type='pdf')
 
+    
+    
     # Check if PDF is already in cache
     if pdf_file is not None:
         file_name = pdf_file.name
@@ -97,10 +89,18 @@ def main():
         openai_api_key = os.environ["OPENAI_API_KEY"]
         embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
 
+        if st.button("New Chat"):
+            st.session_state.session_state["conversation"] = []
+        # Reset the conversation and selected PDF when the button is clicked
+            st.session_state.session_state["pdf_cache"] = {}
+            selected_pdf_name = ""    
+            st.experimental_rerun()
+        
         # Display previous conversation
-        st.subheader("Previous Conversation:")
-        for message in conversation:
-            st.write(f"{message['role']}: {message['content']}")
+        with st.sidebar:
+            st.subheader("Previous Conversation:")
+            for message in conversation:
+                st.write(f"{message['role']}: {message['content']}")
 
         # Accept user questions/query
         query = st.text_input("Ask questions about your PDF file:")
@@ -119,9 +119,7 @@ def main():
             conversation.append({"role": "assistant", "content": response})
             st.session_state.session_state["conversation"] = conversation
 
-            st.subheader("Current Conversation:")
-            for message in conversation:
-                st.write(f"{message['role']}: {message['content']}")
-
+        
+        
 if __name__ == '__main__':
     main()
