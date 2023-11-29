@@ -25,3 +25,11 @@ Consider implementing a caching mechanism to remember previously uploaded PDF do
 
 OUTPUT:
 I have built web application using streamlit and one can drag and drop the pdf and question on it like we did in chatgpt. Also, it will preserve the previous chats and cache.
+
+
+Task 6-
+Problem Statement: Building a Streamlit Chatbot App for Conducting User Interviews.
+ 
+Description: The goal of this project is to develop a Streamlit chatbot application that conducts user interviews. The chatbot will prompt users to introduce themselves and specify the job role they are seeking an interview for (e.g., HR manager, Developer, Project Manager, etc.). Based on the specified job role, the chatbot will ask 3-4 role-specific questions. The follow-up questions will be tailored based on the user's responses. After the interview questions, the chatbot will conclude the interview by providing a brief feedback on the user's performance. Additionally, the application will include an "exit chat" button to clear the conversation, allowing a new user to start a new interview.
+  
+Techniques and Libraries: Utilize Langchain and OpenAi api to generate natural language responses and feedback based on user interactions. Implement prompt templates to structure the interview process and guide the conversation flow. Leverage Streamlit for building the user interface and handling the interview process.
